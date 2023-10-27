@@ -15,11 +15,7 @@ const questions = [
         name: 'description',
         message: "Proved a brief description about your project"
     },
-    {
-        type: 'input',
-        name: 'tableOfContents',
-        message: "Table of Contents (optional)",
-    },
+ 
     {
         type: 'input',
         name: 'installation',
@@ -33,13 +29,13 @@ const questions = [
     {
         type: 'input',
         name: 'contributors',
-        message: "Who can contributed to this project?"
+        message: "Who contributed to this project?"
     },
     {
         type: 'checkbox',
         name: 'license',
         message: 'Choose license',
-        choices:['MIT License', 'Apache License 2.0', 'The Unlicense', 'Mozilla Public License' ]
+        choices:['MIT License', 'Apache License 2.0', 'The Unlicense', 'Mozilla Public License']
     },
     {
         type: 'input',
@@ -55,14 +51,15 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: "add your github "
+        message: "Add your github username"
     },
     {
         type: 'input',
-        name: 'Questions',
-        message: "what is your email"
+        name: 'email',
+        message: "What is your email address for?"
     }
 ];
+
 
 
 // TODO: Create a function to write README file
@@ -86,5 +83,4 @@ function init() {
 }
 
 // Function call to initialize app
-// module.exports = generateMarkdown
 init();
